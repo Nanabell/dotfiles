@@ -10,7 +10,7 @@ then
     PX=0
     PY=0
     # lockscreen image info
-    R=$(file $HOME/.config/screen-locker/screen-lock.png | grep -o '[0-9]* x [0-9]*')
+    R=$(file $HOME/.config/screen-locker/screen-lock.png -L | grep -o '[0-9]* x [0-9]*')
     RX=$(echo $R | cut -d' ' -f 1)
     RY=$(echo $R | cut -d' ' -f 3)
  
